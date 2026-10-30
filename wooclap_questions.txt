@@ -1,0 +1,94 @@
+WOOCLAP QUESTIONS - ASR course MOSIG 2026 - event COMNGOJ
+(* = correct answer ; polls and word clouds have no correct answer)
+
+=== BREAK 1 - From waves to words (3 questions) ===
+
+Q1 [Multiple choice] In a classical ASR system, which component models p(w), how likely a word sequence is?
+- Acoustic model
+* Language model
+- Pronunciation lexicon
+- Decoder
+
+Q2 [Multiple choice] Why can WER exceed 100%?
+* Because of insertions
+- Because of substitutions
+- Because of text normalization
+- It can't
+
+Q3 [Word cloud] Which languages do you speak at home?
+
+=== BREAK 2 - Going end-to-end (3 questions) ===
+
+Q4 [Multiple choice] Which model predicts one label per frame and uses a "blank" symbol?
+* CTC
+- Attention encoder-decoder
+- HMM/GMM
+- n-gram language model
+
+Q5 [Multiple choice] On the Open ASR Leaderboard, which decoders are the fastest?
+- LLM decoders
+* CTC and TDT (transducer)
+- Attention decoders
+- All about the same
+
+Q6 [Poll, multiple answers allowed] Which speech recognition have you already used?
+- Phone dictation
+- Voice assistant
+- Whisper or similar
+- Meeting transcription
+- None
+
+=== BREAK 3 - SSL and speech tokens (3 questions) ===
+
+Q7 [Multiple choice] Why is self-supervised learning harder for speech than for text?
+* Speech is continuous: no fixed vocabulary and no word boundaries
+- Speech datasets are smaller
+- Transformers don't work on speech
+- Text has no structure
+
+Q8 [Multiple choice] What does HuBERT predict for the masked frames?
+- The waveform
+* Discrete cluster IDs (hidden units)
+- The transcript
+- The speaker
+
+Q9 [Multiple choice] In residual vector quantization (RVQ), the last codebooks encode...
+- The most important information
+* Fine details (what is left)
+- The speaker ID
+- The text
+
+=== BREAK 4 - When LLMs learn to listen (2 questions) ===
+
+Q10 [Multiple choice] In the "encoder + adapter + LLM" recipe, what does the adapter do?
+- Translates speech into text
+* Reduces the frame rate and maps audio features to the LLM space
+- Generates speech
+- Removes noise
+
+Q11 [Multiple choice] What is a typical risk of LLM-based ASR?
+- Cannot handle several languages
+* Inventing fluent text not in the audio
+- Needs a pronunciation lexicon
+- Cannot use context
+
+=== BREAK 5 - Talking while listening (3 questions) ===
+
+Q12 [Multiple choice] What makes Moshi "full duplex"?
+- Two separate models, one to listen and one to speak
+* It models the user's and its own audio streams in parallel
+- It waits for silence before answering
+- It only works with text
+
+Q13 [Multiple choice] In Moshi, what is the "inner monologue"?
+- A hidden chain of thought before answering
+* Time-aligned text tokens predicted together with its own speech
+- A second model checking safety
+- The transcript of the user
+
+Q14 [Poll] What annoys you most with voice assistants?
+- It cuts me off
+- It's too slow
+- I can't interrupt it
+- It doesn't understand me
+- It calls me on my phone when I'm busy
