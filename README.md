@@ -34,6 +34,8 @@ or simply `latexmk -pdf ASRcourseMOSIG2026.tex`.
 - figures at the root, in `images/` and in `images2026/`
 - `wooclap_questions.txt`: optional quiz questions (quiz slides are hidden by default; set `\quiztrue` in the preamble to show them)
 
-## Figures
+## License
 
-Figures taken from papers or other sources are credited on the slides where they appear ("Figure from ..."). They remain the property of their authors.
+The slide source, the text of the slides and the original diagrams are released under the [MIT License](LICENSE).
+
+Figures taken from papers or other sources are **not** covered by this license: they are credited on the slides where they appear ("Figure from ...") and remain the property of their authors.
